@@ -598,7 +598,7 @@ export default function Bytecart() {
     <>
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`} aria-label="Main">
         <a className="br" href="#home" onClick={() => navigate('home')}>
-          <img src="logo.svg" alt="Logo" style={{height: '24px', width: '24px', marginRight: '6px'}} />
+          <img src="icon-96.webp" alt="ByteCart Logo" style={{height: '24px', width: '24px', marginRight: '6px', objectFit: 'contain'}} />
           Byte<i>Cart</i>
         </a>
         <button className="menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu" aria-expanded={isMenuOpen}>

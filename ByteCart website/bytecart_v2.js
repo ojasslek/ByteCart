@@ -29,8 +29,9 @@ const mk = () => raw.map((r, i) => ({ id: i + 1, name: r[0], brand: r[1], cat: r
 const fresh = () => ({ P: mk(), cart: {}, budget: 1500, notify: [], audit: [], flags: [], txns: [], xa: {}, al: { w: 0, x: 0 }, last: null, pay: 'UPI', n: 1 });
 let S; try { S = JSON.parse(localStorage.getItem('sm1')) } catch (e) { }
 S = S || fresh();
-let Q = '', CAT = 'All', MQ = '', TAB = 'inv', AQ = '', AC = 'All', AS = 'name', stream, iv, staffAuthed = '';
+let Q = '', CAT = 'All', MQ = '', TAB = 'inv', AQ = '', AC = 'All', AS = 'name', stream, iv, staffAuthed = (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('bytecart_staff_auth')) || (location.search.includes('staff=1') ? 'admin' : '');
 const save = () => { try { localStorage.setItem('sm1', JSON.stringify(S)) } catch (e) { } };
+if (typeof location !== 'undefined' && location.search.includes('demo=1') && Object.keys(S.cart).length === 0) { S.cart[2] = { q: 1, s: 1 }; save(); }
 const gp = id => S.P.find(p => p.id == id);
 const now = () => new Date().toLocaleString('en-IN');
 const log = (t, m) => { S.audit.unshift({ t: now(), k: t, m }); S.audit.length = Math.min(S.audit.length, 80); save() };
@@ -804,6 +805,6 @@ addEventListener('hashchange', render);
 
 render();
 
-if (localStorage.getItem('bytecart_tutorial_disabled') !== 'true') {
+if (localStorage.getItem('bytecart_tutorial_disabled') !== 'true' && !location.search.includes('notut')) {
   showTutorial(1);
 }
