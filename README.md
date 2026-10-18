@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  👉 <strong><a href="FOR_JUDGES.md">Read the Judge & Evaluator Guide (FOR_JUDGES.md)</a></strong>
+  👉 <strong><a href="JUDGES.md">Read the Judge & Evaluator Guide (JUDGES.md)</a></strong>
 </p>
 
 ---
