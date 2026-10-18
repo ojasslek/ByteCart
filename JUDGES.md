@@ -19,7 +19,7 @@ Traditional supermarket checkout is broken: **long queues lead to abandoned purc
 
 ### Running the Web Platform Locally:
 If the server is running, open:
-👉 **[http://localhost:3000/](http://localhost:3000/)**
+👉 **[http://localhost:3000/](http://localhost:(port)/)**
 
 To launch or restart the server at any time:
 ```bash
