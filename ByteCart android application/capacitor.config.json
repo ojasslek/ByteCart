@@ -1,0 +1,8 @@
+{
+  "appId": "com.bytecart.app",
+  "appName": "ByteCart",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}

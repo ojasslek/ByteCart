@@ -1,0 +1,18 @@
+{
+  "name": "bytecart",
+  "version": "1.0.0",
+  "description": "ByteCart Scan & Go",
+  "private": true,
+  "scripts": {
+    "build": "cap copy",
+    "sync": "cap sync"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/cli": "^8.5.3",
+    "@capacitor/core": "^8.5.3"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5"
+  }
+}
