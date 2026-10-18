@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>Next-Gen In-Store Scan & Go, Smart Cart & Loss Prevention Platform</strong>
+  <strong>Next-Gen In-Store Scan & Go, Smart Cart</strong>
 </p>
 
 <p align="center">
@@ -17,6 +17,9 @@
 
 <p align="center">
   👉 <strong><a href="JUDGES.md">Read the Judge & Evaluator Guide (JUDGES.md)</a></strong>
+</p>
+<p align="center">
+  <strong>FOR BETTER EXPERIENCE, PLEASE DOWNLOAD BYTECART APK FOR THE RELEASES SECTION</strong>
 </p>
 
 ---
@@ -225,14 +228,14 @@ ByteCart/
 cd "ByteCart website"
 node serve.js
 ```
-The application will be accessible at **http://localhost:3000/**.
+The application will be accessible at **http://localhost:(port)/**.
 
 *Tip: To jump directly to specific views:*
-- Storefront Home: `http://localhost:3000/#home`
-- Catalog & Cart: `http://localhost:3000/#shop`
-- Store Map: `http://localhost:3000/#map`
-- Checkout: `http://localhost:3000/#checkout`
-- Staff Console: `http://localhost:3000/#staff` (Use ID `admin` / Password `admin` or navigate with `?staff=1`)
+- Storefront Home: `http://localhost:(port)/#home`
+- Catalog & Cart: `http://localhost:(port)/#shop`
+- Store Map: `http://localhost:(port)/#map`
+- Checkout: `http://localhost:(port)/#checkout`
+- Staff Console: `http://localhost:(port)/#staff` (Use ID `admin` / Password `admin` or navigate with `?staff=1`)
 
 #### Option B: Python Preview Server
 ```bash
